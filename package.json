@@ -4,7 +4,7 @@
   "description": "express",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ugly/index.js"
+    "dev": "nodemon expressRouter/index.js  "
   },
   "repository": {
     "type": "git",
