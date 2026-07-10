@@ -4,7 +4,7 @@
   "description": "express",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon routeParams/index.js  "
+    "dev": "nodemon params/index.js  "
   },
   "repository": {
     "type": "git",
