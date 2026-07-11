@@ -4,7 +4,7 @@
   "description": "express",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon controller/index.js  "
+    "dev": "nodemon queryString/index.js  "
   },
   "repository": {
     "type": "git",
