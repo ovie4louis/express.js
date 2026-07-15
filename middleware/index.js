@@ -1,5 +1,5 @@
 import express from "express"
-import products from "./products.js"
+import userCredentials from "./logs.js"
 
 /*
 
@@ -13,18 +13,25 @@ import products from "./products.js"
 const app = express()
 //console.clear();
 
-function userCredentials(req, res, next){
-    console.log("username: (OVIE)");
-    console.log("email: (ovie@gmail.com)");
-    console.log("password: (ovie222)");
-    console.log("age: (10)");
-    next()
-    
-    
-}
+app.use( userCredentials)
+
 
 app.get("/", (req,res,) => {
+
+    res.send("<h1> Hello Add Admin Ovie </h1>")
     
+})
+
+app.get("/create", (req, res) => {
+    res.send("<h1> Create Addmins </h1>")
+})
+
+app.get("/update", (req,res) => {
+    res.send("Update Admin")
+})
+
+app.get("/delete", (req,res) => {
+    res.send("Delete Addmin")
 })
 
 app.listen(8000, () => {
