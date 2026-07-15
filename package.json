@@ -4,7 +4,7 @@
   "description": "express",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon backendToFrontend/index.js  "
+    "dev": "nodemon middleware/index.js  "
   },
   "repository": {
     "type": "git",
