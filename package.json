@@ -4,7 +4,7 @@
   "description": "express",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js, "
+    "dev": "nodemon try/index22.js, "
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/ovie4louis/express.js#readme",
   "dependencies": {
+    "body-parser": "^2.3.0",
     "ejs": "^6.0.1",
     "express": "^5.2.1"
   }

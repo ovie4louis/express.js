@@ -1,15 +1,20 @@
-import  express from "express"
-import path from "path"
-import route from "./routesd/route.js"
-const app = express()
+import express from "express"
+import bodyParser from "body-parser"
 
-app.set('view engine', "ejs")
+const app = express();
 
-//app.use(express.static(join(process.cwd(), "public")))
 
-app.use("/", route)
+app.get("/", (req, res) => {
+    res.send(" Home page testing")
+})
+app.use(bodyParser.json())
 
-app.listen(8000, () => {
-    console.log("Server UP....louis");
+app.post("/post", (req,res) =>{
+    const {name, youTube, age} = req.body
+    res.send(`${name}, ${youTube}, ${age}`)
+})
+
+app.listen(3000, () => {
+    console.log("Testing Server.....");
     
 })
