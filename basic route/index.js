@@ -23,7 +23,7 @@ app.get("/about", (req, res) => {
 // Contact Page
 
 app.get("/Contact", (req, res) => {
-    res.send("<h1> Contact Page")
+    res.send("<h1> Contact Pagenodee")
 })
 
 //listen
